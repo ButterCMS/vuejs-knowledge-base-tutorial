@@ -19,7 +19,7 @@ export default {
 
 	created() {
 		const resp = this.$route.query.post;
-		const butter = Butter('cd3a6987e220e96a1d76283f0d0d928cac2d1d4d');
+		const butter = Butter('your api key goes here');
 		butter.page
 			.retrieve('*', JSON.parse(resp))
 			.then((response) => {
